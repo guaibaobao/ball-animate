@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lianxi</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			background-color: #ddf5f7;
+			position: relative;
+			animation: skyset 30s infinite linear  normal;
+		}
+		.country{
+			width: 100%;
+			height: 1000px;
+			margin-top: 400px;
+			position: absolute;
+			overflow: hidden;
+			/* background-color: #ddf5f7; */
+			/*animation: skyset 30s infinite linear  normal;*/
+		}
+		@keyframes skyset {
+			form { background: #ddf5f7;}
+			 50% { background: #0f192c;}
+			 to { background: #f9c7b8;}
+		}
+		.beans{
+			position: absolute;
+			top:80px;
+			left: 50%;
+			height: 201px;
+			width: 88px;
+			background: url(images/beans.png) no-repeat;
+		}
+		.skyline{
+			position: absolute;
+			top: 180px;
+			width: 100%;
+			height: 150px;
+			background: url(images/skyline.png) repeat;
+		}
+		.groundBack{
+			position: absolute;
+			top: 200px;
+			width: 100%;
+			height: 250px;
+			background: url(images/groundBack.png) repeat;
+		}
+		.dowEventCenter{
+			width: 520px;
+			height: 229px;
+			position: absolute;
+			top: 160px;
+			left: 90px;
+			background: url(images/dowEventCenter.png) no-repeat;
+		}
+		.Glockenspiel{
+			width:137px;
+			height: 360px;
+			position: absolute;
+			top: 60px;
+			left: 43%;
+			background: url(images/Glockenspiel.png) no-repeat; 
+		}
+		.Planetarium{
+			width: 330px;
+			height: 380px;
+			position: absolute;
+			top: 100px;
+			right: 180px;
+			background: url(images/Planetarium.png) no-repeat;
+		}
+		.groundMid{
+			width: 100%;
+			height: 300px;
+			position: absolute;
+			top:200px;
+			right: 50px;
+			background: url(images/groundMid.png) repeat;
+		}
+		.groundFront{
+			width:1000%;
+			height:300px;
+			position: absolute;
+			top:200px;
+			z-index: 2;
+			left:-15%;
+			background: url(images/groundFront.png) repeat;
+		}
+		.friendshipShell{
+			width: 250px;
+			height: 360px;
+			z-index: 1;
+			position: absolute;
+			top: 30px;
+			left: 18%;
+			background: url(images/friendshipShell.png) no-repeat;
+		}
+		.cloudLarge{
+			width:400px;
+			height:200px;
+			position: absolute;
+			z-index: 3;
+			top:80px;
+			left: 100px;
+			background: url(images/cloudLarge.png) no-repeat;
+			animation:cloudLarge  50s infinite linear alternate;
+		}
+		.cloudMedium{
+			width: 200px;
+			height: 300px;
+			position: absolute;
+			top: 100px;
+			left: 50%;
+			background: url(images/cloudMedium.png) no-repeat;
+			animation:cloudMedium  40s infinite linear alternate;
+		}
+		.cloudSmall{
+			width: 100px;
+			height: 200px;
+			position: absolute;
+			top: 120px;
+			right: 120px;
+			background: url(images/cloudSmall.png) no-repeat;
+			animation:cloudSmall  80s infinite linear alternate;
+		}
+		.balloon {
+			position: absolute;
+			z-index:4;
+			top:100px;
+			right: 20%;
+			background: url(images/balloon.png) no-repeat no-repeat center;
+			height: 227px;
+			width: 157px;
+			animation: balloon 30s infinite ease alternate;
+		}
+		@keyframes balloon {
+			 form{ right: -157px;
+			     transform: rotate(0deg);
+				}
+			 25% { right: 25%;
+			       transform: rotate(30deg);
+			   	 }
+			 50% {	 right:50%;
+			       transform: rotate(60deg);
+			   	}
+			 75% {right:75%;
+			      transform: rotate(30deg);
+			  	}
+			to { right: 100%;
+			       transform: rotate(0deg);
+			   	 }
+		}
+		@keyframes cloudLarge{
+			  from { left: 100px;
+			     transform: rotate(0deg);}
+			 to { left:90%;
+			       transform: rotate(0deg);}
+		}
+		@keyframes cloudMedium {
+			 from { left:50%;
+			     transform: rotate(0deg);}
+			 to { left:95%;
+			       transform: rotate(0deg);}
+		}
+		@keyframes cloudSmall {
+			 from {right: 120px;
+			     transform: rotate(0deg);}
+			 to { right: 95%;
+			       transform: rotate(0deg);}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="country">
+			<div class="beans"></div>
+			<div class="skyline"></div>
+			<div class="groundBack"></div>
+			<div class="dowEventCenter"></div>
+			<div class="Glockenspiel"></div>
+			<div class="Planetarium"></div>
+			<div class="groundMid"></div>
+			<div class="groundFront"></div>
+			<div class="friendshipShell"></div>
+		</div>
+		<div class="cloudLarge"></div>
+		<div class="cloudMedium"></div>
+		<div class="cloudSmall"></div>
+		<div class="balloon"></div>
+	</section>
+</body>
+</html>
